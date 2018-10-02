@@ -1,0 +1,104 @@
+<----Strings--->
+The 'type' function can be used to know what type of data object it is
+Strings are made of characters, the space is also called a character.
+The length of the string can be calculated using the len() function
+Even numbers enclosed in quotes are also considered strings.
+Strings cannot be added together, but they can be concatenated
+    Eg: "100" + "100" does not equal "200" !
+        "100" + "100" equals '100100'
+
+<----Numbers---->
+>>> a = 10
+>>> type(a)
+<class 'int'>
+>>> type(0)
+<class 'int'>
+>>> type(100)
+<class 'int'>
+>>> type(-100)
+<class 'int'>
+>>> type(0.5)
+<class 'float'>
+>>> 100+100
+200
+
+<----Built-In-Functions---->
+>>> dir(__builtins__)
+        --->ignore
+                ['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BlockingIOError', 
+                'BrokenPipeError', 'BufferError', 'BytesWarning', 'ChildProcessError', 'ConnectionAbortedError', 
+                'ConnectionError', 'ConnectionRefusedError', 'ConnectionResetError', 'DeprecationWarning', 'EOFError', 
+                'Ellipsis', 'EnvironmentError', 'Exception', 'False', 'FileExistsError', 'FileNotFoundError', 'FloatingPointError',
+                'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 
+                'IndexError', 'InterruptedError', 'IsADirectoryError', 'KeyError', 'KeyboardInterrupt', 'LookupError',
+                'MemoryError', 'ModuleNotFoundError', 'NameError', 'None', 'NotADirectoryError', 'NotImplemented', 
+                'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'PermissionError',
+                'ProcessLookupError', 'RecursionError', 'ReferenceError', 'ResourceWarning', 'RuntimeError', 
+                'RuntimeWarning', 'StopAsyncIteration', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 
+                'SystemError', 'SystemExit', 'TabError', 'TimeoutError', 'True', 'TypeError', 'UnboundLocalError', 
+                'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 
+                'UserWarning', 'ValueError', 'Warning', 'WindowsError', 'ZeroDivisionError', 
+                '__build_class__', '__debug__', '__doc__', '__import__', '__loader__', '__name__', '__package__', '__spec__', 
+
+        --->useful
+
+                'abs', 'all', 'any', 'ascii', 'bin', 'bool', 'breakpoint', 'bytearray', 'bytes', 'callable', 'chr', 
+                'classmethod', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir', 'divmod', 
+                'enumerate', 'eval', 'exec', 'exit', 'filter', 'float', 'format', 'frozenset', 
+                'getattr', 'globals', 'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 'isinstance', 
+                'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'map', 'max', 'memoryview', 'min', 'next', 'object', 
+                'oct', 'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'repr', 'reversed', 
+                'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip']
+
+
+<----Lists---->
+>>> address = ["#04-04","1 Loft", "24 Geylang"]
+>>> address[0], address[1], address[2]
+('#04-04', '1 Loft', '24 Geylang')
+>>> address[0]
+'#04-04'
+>>> print(address[0])
+#04-04
+>>> print(address[0], address[1], address[2])
+#04-04 1 Loft 24 Geylang
+>>> 'hello world' [0]
+'h'
+>>> address[3]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> address[-1]
+'24 Geylang'
+>>> address[0:2]----------------------->This is called slicing
+['#04-04', '1 Loft']
+>>> address[0:]
+['#04-04', '1 Loft', '24 Geylang']
+>>> address[:]
+['#04-04', '1 Loft', '24 Geylang']
+>>> address[-1:-2]---------------------->This doesn't work because python does slicing only from left to right
+[]
+>>> address[-2:-1]
+['1 Loft']
+>>> address[-3:]
+['#04-04', '1 Loft', '24 Geylang']
+>>> address.append('Singapore')---------->Methods can be used to add items to the list
+>>> address
+['#04-04', '1 Loft', '24 Geylang', 'Singapore']
+>>> address.remove()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: remove() takes exactly one argument (0 given)
+>>> address.remove(0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: list.remove(x): x not in list
+>>> address.remove('Singapore')
+>>> address
+['#04-04', '1 Loft', '24 Geylang']
+>>> address.append('Singapore')
+>>> address
+['#04-04', '1 Loft', '24 Geylang', 'Singapore']
+>>> address.pop(1)--------------------------------->Pop method can be used to remove an item using the index of that item
+'1 Loft'
+>>> address
+['#04-04', '24 Geylang', 'Singapore']
