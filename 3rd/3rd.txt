@@ -1,0 +1,65 @@
+help method can be used to understand what a method is, what a data object is in python
+>>> help(list.remove)
+Help on method_descriptor:
+
+remove(self, value, /)
+    Remove first occurrence of value.
+
+    Raises ValueError if the value is not present.
+
+<----Tuples---->
+A tuple is not mutable which means you can't append or remove items from tuples, unlike lists. Trying to do append to a tuple would throw an error:
+
+>>> mytuple = (1, 2, "Three") 
+>>> mytuple.append("Four")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'append'
+Tuples are rarely used but if you ever want to have a sequence that you really don't want to be changed, then tuples might be a good idea to use.
+
+
+<----Dictionaries---->
+>>> pins = {"sudheer":1234, "swathi":3434, "rajani":4483, "purna":1111}
+>>> pins[0]---------------------------------->indexing doesn't work in dictionaries!
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 0
+>>> pins["sudheer"]-------------------->keys can be used to find the values
+1234
+>>> pins.keys()
+dict_keys(['sudheer', 'swathi', 'rajani', 'purna'])
+>>> pins.values()
+dict_values([1234, 3434, 4483, 1111])
+>>> pins.remove("sudheer")------------------>cannot use remove in dictionaries
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'dict' object has no attribute 'remove'
+>>> pins
+{'sudheer': 1234, 'swathi': 3434, 'rajani': 4483, 'purna': 1111}
+>>> pins.pop("sudheer")---------------------->can use pop to remove things
+1234
+>>> pins
+{'swathi': 3434, 'rajani': 4483, 'purna': 1111}
+>>> pins["sudheer"]=1234---------------------->this is the way to add values to the dictionary, append method cannot be used for dictionaries
+>>> pins
+{'swathi': 3434, 'rajani': 4483, 'purna': 1111, 'sudheer': 1234}
+>>> pins["sudheer'] = 0000
+  File "<stdin>", line 1
+    pins["sudheer'] = 0000
+                         ^
+SyntaxError: EOL while scanning string literal
+>>> pins["sudheer"]= 0000
+>>> pins
+{'swathi': 3434, 'rajani': 4483, 'purna': 1111, 'sudheer': 0}
+>>> names = ["sudheer", "swathi", "rajani", "purna"]
+>>> pins = [1234, 3434, 4483, 1111]
+>>> safe = dict(zip(names, pins))------------------------->this is the way to make a dictionary out of two lists
+>>> safe
+{'sudheer': 1234, 'swathi': 3434, 'rajani': 4483, 'purna': 1111}
+
+
+<----Comparision Operators---->
+>>> "1234" == 1234
+False
+>>> 1234 == 1234
+True
