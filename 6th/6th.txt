@@ -1,0 +1,69 @@
+<-----Writing to a text file---->
+
+    Character Meaning
+    --------- ---------------------------------------------------------------
+    'r'       open for reading (default)
+    'w'       open for writing, truncating the file first
+    'x'       create a new file and open it for writing
+    'a'       open for writing, appending to the end of the file if it exists
+
+>>> myfile = open("employees.txt", "w")
+>>> myfile.write("Mike")
+4
+>>> myfile.close()
+>>> myfile.read()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: I/O operation on closed file.
+>>> myfile.open("employees.txt")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: '_io.TextIOWrapper' object has no attribute 'open'
+>>> myfile = open("employees.txt")
+>>> myfile.read()
+'Mike'
+>>> myfile.close()
+>>> myfile = open("employees.txt", "w")
+>>> myfile.write("Mike\n\Joe\n\Jack")
+15
+>>> myfile.close()
+>>> myfile = open("employees.txt", "w")
+>>> myfile.write("Mike\nJoe\nJack")
+13
+>>> myfile.close()
+>>> myfile = open("employees.txt", "a")
+>>> myfile.write("\nJoseph")
+7
+>>> myfile.close()
+>>> myfile = open("employees.txt", "a+")
+>>> myfile.read()
+''
+>>> myfile.seek(0)
+0
+>>> myfile.read()
+'Mike\nJoe\nJack\nJoseph'
+>>> myfile.splitlines()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: '_io.TextIOWrapper' object has no attribute 'splitlines'
+>>> myfile.read()
+''
+>>> myfile.seek(0)
+0
+>>> myfile.read()
+'Mike\nJoe\nJack\nJoseph'
+>>> myfile.write("\nJohn")
+5
+>>> myfile.read()
+''
+>>> myfile.seek(0)
+0
+>>> myfile.read()
+'Mike\nJoe\nJack\nJoseph\nJohn'
+>>> myfile.close()
+>>>
+
+
+<-----String Formatting----->
+    print("Hi %s you are logged in" % username)
+    message = "Hi %s you are logged in" % username---->string formatting is very useful in this scenario, instead of using it in the print function above, you can use string formatting for variables

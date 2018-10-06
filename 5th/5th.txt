@@ -1,0 +1,7 @@
+myfile.seek(0)----->moves the cursor to the starting of file. Useful when you want to read the content from the beginning.
+
+Once you add myfile.read() contents to a variable, you can use if and else conditionals to compare the contents, no need of splitlines method.
+
+splitlines()-------->this method removes the '/n' characters created when reading a file! And it creates a list with all the items in a file.
+
+myfile.close()------>closes the file so that it doesn't take up anymore memory on the computer
