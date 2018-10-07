@@ -1,0 +1,27 @@
+>>> whenever = datetime.strptime ("08-10-2018", "%d-%m-%Y")--------->strptime can be used to formatted the entered date.
+>>> whenever
+datetime.datetime(2018, 10, 8, 0, 0)
+>>> whenever = datetime.strptime ("08/10/2018", "%d/%m/%Y")
+>>> whenever
+datetime.datetime(2018, 10, 8, 0, 0)
+>>> whenever.strftime("%d")
+'08'
+>>> whenever.strftime("%m")
+'10'
+>>> whenever.strftime("%Y")
+'2018'
+>>> whenever.strftime("%d.%m.%Y")
+'08.10.2018'
+>>> whenever.month
+10
+>>> whenever.day
+8
+>>> whenever.year
+2018
+>>>
+
+<-----For more shortcodes----->
+http://strftime.org/
+
+<-----zip function----->
+for i, j in zip(x,y): ------->zip function can be used in cases where we want a multiple loop sequence, it can loop through multiple data objects
