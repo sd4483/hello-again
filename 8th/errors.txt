@@ -1,0 +1,30 @@
+Notes:
+"Syntax Errors - Examples"
+    int 9
+    print 20
+    a = [1,2,3)
+    mydict = ["name":"sudheer", "favsuperhero":"batman"]
+
+"Exceptions"
+    Exceptions are like logical erros, you need to use logic to fix these erros
+    Example:
+            a = 1
+            b = "2"
+            print (a+b)
+            Traceback (most recent call last):
+                File "<stdin>", line 1, in <module>
+            TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+            correction - print (a + int(b)) = 3 or print (str(a)+b) = 12
+
+"Name Errors"
+    >>> print(c)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'c' is not defined
+
+"Zero Division Errors"
+    >>> print (a/0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
