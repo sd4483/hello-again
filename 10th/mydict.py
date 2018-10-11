@@ -12,6 +12,8 @@ def mydict(word):
 
     if word in data:                    #checks if the entered word is in data
         return data[word]               #returns the meaning for entered word
+    elif word.upper() in data:          #this checks for acronyms like USA or NATO
+        return data[word.upper()]
     elif word.title() in data:          #this checks for nouns like Delhi, Singapore, etc
         return data[word.title()]       #returns the noun if it is found
     elif len(close_match) != 0:         #if the word is not is data, this executes, this is where close match object comes in handy
