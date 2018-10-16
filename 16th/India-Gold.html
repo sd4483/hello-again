@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_793422b59626433f9c742ded5bbf27c8 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_793422b59626433f9c742ded5bbf27c8" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_793422b59626433f9c742ded5bbf27c8 = L.map(
+        'map_793422b59626433f9c742ded5bbf27c8', {
+        center: [20.5937, 78.9629],
+        zoom: 6,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_ffcab563cffc4ba9bb0e921acb23b546 = L.tileLayer(
+        'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_793422b59626433f9c742ded5bbf27c8);
+    
+            var feature_group_ae4aac30efd8432a8584b3125e24459b = L.featureGroup(
+                ).addTo(map_793422b59626433f9c742ded5bbf27c8);
+        
+    
+        var marker_8049d304b286479a965f4122bd4a9392 = L.marker(
+            [13.58333333, 76.58333333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_6de25b4c2a42444f9993c8719fa7e4d3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8049d304b286479a965f4122bd4a9392.setIcon(icon_6de25b4c2a42444f9993c8719fa7e4d3);
+            
+    
+            var popup_678ca4acaa3c4df98533cbaa9fd85728 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2f12326a26e842faae5c810451b3964a = $('<div id="html_2f12326a26e842faae5c810451b3964a" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_678ca4acaa3c4df98533cbaa9fd85728.setContent(html_2f12326a26e842faae5c810451b3964a);
+            
+
+            marker_8049d304b286479a965f4122bd4a9392.bindPopup(popup_678ca4acaa3c4df98533cbaa9fd85728)
+            ;
+
+            
+        
+    
+        var marker_410b4155b2e649ac9046e6573267a2d9 = L.marker(
+            [14.38333333, 76.36666667],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_3de09bad8d3740419ad16d541a60c6bf = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_410b4155b2e649ac9046e6573267a2d9.setIcon(icon_3de09bad8d3740419ad16d541a60c6bf);
+            
+    
+            var popup_807d6a83e0e94888a0fa46b55e235974 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f5ab4dfac2014e24ab0c8370c9f1c127 = $('<div id="html_f5ab4dfac2014e24ab0c8370c9f1c127" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_807d6a83e0e94888a0fa46b55e235974.setContent(html_f5ab4dfac2014e24ab0c8370c9f1c127);
+            
+
+            marker_410b4155b2e649ac9046e6573267a2d9.bindPopup(popup_807d6a83e0e94888a0fa46b55e235974)
+            ;
+
+            
+        
+    
+        var marker_145d3c58023146d3b6f91e0540c4f3a1 = L.marker(
+            [14.28333333, 76.4],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_2e6db15d85f54ec6a3036ecea69c8e54 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_145d3c58023146d3b6f91e0540c4f3a1.setIcon(icon_2e6db15d85f54ec6a3036ecea69c8e54);
+            
+    
+            var popup_bda1edef704f4bb79649fbfd7874086a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ee841906025e477d96b4bdf39fc969ea = $('<div id="html_ee841906025e477d96b4bdf39fc969ea" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_bda1edef704f4bb79649fbfd7874086a.setContent(html_ee841906025e477d96b4bdf39fc969ea);
+            
+
+            marker_145d3c58023146d3b6f91e0540c4f3a1.bindPopup(popup_bda1edef704f4bb79649fbfd7874086a)
+            ;
+
+            
+        
+    
+        var marker_958ccd6f9b4b4d1db4abfd09edbcf6ad = L.marker(
+            [13.75, 76.73333333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_3daa8a87891e48b0ad37c3a692069385 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_958ccd6f9b4b4d1db4abfd09edbcf6ad.setIcon(icon_3daa8a87891e48b0ad37c3a692069385);
+            
+    
+            var popup_ef4649bfcba4495fad4ffddb71d60e44 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5f34ab3c40414e67ae314b02da0af658 = $('<div id="html_5f34ab3c40414e67ae314b02da0af658" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_ef4649bfcba4495fad4ffddb71d60e44.setContent(html_5f34ab3c40414e67ae314b02da0af658);
+            
+
+            marker_958ccd6f9b4b4d1db4abfd09edbcf6ad.bindPopup(popup_ef4649bfcba4495fad4ffddb71d60e44)
+            ;
+
+            
+        
+    
+        var marker_3535f5cdef524c89ab3df2193138c838 = L.marker(
+            [15.33333333, 75.65],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_9042d713fd35430bb071c27b5b96ca28 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3535f5cdef524c89ab3df2193138c838.setIcon(icon_9042d713fd35430bb071c27b5b96ca28);
+            
+    
+            var popup_5a84060fe28b4b75ac89765029c71fd6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ce8eabf3e5c9460d8db893759991d013 = $('<div id="html_ce8eabf3e5c9460d8db893759991d013" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_5a84060fe28b4b75ac89765029c71fd6.setContent(html_ce8eabf3e5c9460d8db893759991d013);
+            
+
+            marker_3535f5cdef524c89ab3df2193138c838.bindPopup(popup_5a84060fe28b4b75ac89765029c71fd6)
+            ;
+
+            
+        
+    
+        var marker_0a504f41f0614613a13aaed9f05a1c07 = L.marker(
+            [15.3, 75.56666667],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_26905582d16a41cea4f69550bf3fa78f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0a504f41f0614613a13aaed9f05a1c07.setIcon(icon_26905582d16a41cea4f69550bf3fa78f);
+            
+    
+            var popup_025cd6e04fbc4a91b17dd1dda207d963 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dfaeaada4e144cf0b03840b683349913 = $('<div id="html_dfaeaada4e144cf0b03840b683349913" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_025cd6e04fbc4a91b17dd1dda207d963.setContent(html_dfaeaada4e144cf0b03840b683349913);
+            
+
+            marker_0a504f41f0614613a13aaed9f05a1c07.bindPopup(popup_025cd6e04fbc4a91b17dd1dda207d963)
+            ;
+
+            
+        
+    
+        var marker_bcd1a1deb2394cdca577d6a3110e4101 = L.marker(
+            [15.28333333, 75.66666667],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_18a58f01f3234ba2880050141414e17d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bcd1a1deb2394cdca577d6a3110e4101.setIcon(icon_18a58f01f3234ba2880050141414e17d);
+            
+    
+            var popup_43a92ba9be4f4437893d6ad908ddc29b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_822bd67a69a3447fbf80c2bd9fc6c8b7 = $('<div id="html_822bd67a69a3447fbf80c2bd9fc6c8b7" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_43a92ba9be4f4437893d6ad908ddc29b.setContent(html_822bd67a69a3447fbf80c2bd9fc6c8b7);
+            
+
+            marker_bcd1a1deb2394cdca577d6a3110e4101.bindPopup(popup_43a92ba9be4f4437893d6ad908ddc29b)
+            ;
+
+            
+        
+    
+        var marker_182813dfe79849a9ba25d28d80a62124 = L.marker(
+            [15.23333333, 75.66666667],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_a75878929a944a12bcb6d3322fd11118 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_182813dfe79849a9ba25d28d80a62124.setIcon(icon_a75878929a944a12bcb6d3322fd11118);
+            
+    
+            var popup_b3980662861b44269dd37739862c4b77 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8fd5678518c94a5daf63d14d8f10d038 = $('<div id="html_8fd5678518c94a5daf63d14d8f10d038" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_b3980662861b44269dd37739862c4b77.setContent(html_8fd5678518c94a5daf63d14d8f10d038);
+            
+
+            marker_182813dfe79849a9ba25d28d80a62124.bindPopup(popup_b3980662861b44269dd37739862c4b77)
+            ;
+
+            
+        
+    
+        var marker_7125535885474fdcad3b1a697e76cc38 = L.marker(
+            [15.3, 75.68333333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_1ee8939ebb21410d85b718209e2a8988 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7125535885474fdcad3b1a697e76cc38.setIcon(icon_1ee8939ebb21410d85b718209e2a8988);
+            
+    
+            var popup_86db4af95a2440c3bd20389b59252d96 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_14ebc41a8f9b4521be9f7017a406ba6a = $('<div id="html_14ebc41a8f9b4521be9f7017a406ba6a" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_86db4af95a2440c3bd20389b59252d96.setContent(html_14ebc41a8f9b4521be9f7017a406ba6a);
+            
+
+            marker_7125535885474fdcad3b1a697e76cc38.bindPopup(popup_86db4af95a2440c3bd20389b59252d96)
+            ;
+
+            
+        
+    
+        var marker_4aeab4a5fbd14133b04d445a109d8da6 = L.marker(
+            [22.16666667, 86.26666667],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_8cc8dfc3ed924aa0abf0d7c6038a99dd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4aeab4a5fbd14133b04d445a109d8da6.setIcon(icon_8cc8dfc3ed924aa0abf0d7c6038a99dd);
+            
+    
+            var popup_70240fd5526943b798fe9bb7c328eafc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2bcea6d3e777491ca8bec8f76ca1a16e = $('<div id="html_2bcea6d3e777491ca8bec8f76ca1a16e" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_70240fd5526943b798fe9bb7c328eafc.setContent(html_2bcea6d3e777491ca8bec8f76ca1a16e);
+            
+
+            marker_4aeab4a5fbd14133b04d445a109d8da6.bindPopup(popup_70240fd5526943b798fe9bb7c328eafc)
+            ;
+
+            
+        
+    
+        var marker_5c442f1c5f0c4635a091c993aff0103c = L.marker(
+            [16.15, 76.78333333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_92aefbee65f44f9c9788f5367507848c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5c442f1c5f0c4635a091c993aff0103c.setIcon(icon_92aefbee65f44f9c9788f5367507848c);
+            
+    
+            var popup_e3cc46c0bd2e4e348684546287881215 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5a96361c1a8942febdad62056f4c1820 = $('<div id="html_5a96361c1a8942febdad62056f4c1820" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_e3cc46c0bd2e4e348684546287881215.setContent(html_5a96361c1a8942febdad62056f4c1820);
+            
+
+            marker_5c442f1c5f0c4635a091c993aff0103c.bindPopup(popup_e3cc46c0bd2e4e348684546287881215)
+            ;
+
+            
+        
+    
+        var marker_f36eaea36fb54f339d83e492a121a884 = L.marker(
+            [16.18333333, 76.8],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_ae540eac44f84adb90a4a57f2096588e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f36eaea36fb54f339d83e492a121a884.setIcon(icon_ae540eac44f84adb90a4a57f2096588e);
+            
+    
+            var popup_d2fe11ee79c04871bd0a77635b533a7d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_855b96991d704f51ac158dc51dc1c28c = $('<div id="html_855b96991d704f51ac158dc51dc1c28c" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_d2fe11ee79c04871bd0a77635b533a7d.setContent(html_855b96991d704f51ac158dc51dc1c28c);
+            
+
+            marker_f36eaea36fb54f339d83e492a121a884.bindPopup(popup_d2fe11ee79c04871bd0a77635b533a7d)
+            ;
+
+            
+        
+    
+        var marker_266f7b40658647ada98319885086da59 = L.marker(
+            [16.18333333, 76.65],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_68701989052d4f2595df1b46612a0c3e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_266f7b40658647ada98319885086da59.setIcon(icon_68701989052d4f2595df1b46612a0c3e);
+            
+    
+            var popup_2ed8012d16864d818fc7469b04300c2d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f1a0bd67c6a041a4abcff1203d59b747 = $('<div id="html_f1a0bd67c6a041a4abcff1203d59b747" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_2ed8012d16864d818fc7469b04300c2d.setContent(html_f1a0bd67c6a041a4abcff1203d59b747);
+            
+
+            marker_266f7b40658647ada98319885086da59.bindPopup(popup_2ed8012d16864d818fc7469b04300c2d)
+            ;
+
+            
+        
+    
+        var marker_d19b2a86a0524a42a14bcbb8781bbf73 = L.marker(
+            [16.23333333, 76.68333333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_a4b42795717b46299f0571512e9583cd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d19b2a86a0524a42a14bcbb8781bbf73.setIcon(icon_a4b42795717b46299f0571512e9583cd);
+            
+    
+            var popup_49e7adc75c0c411496d207385960300d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bd3c89f7db19413ebf6ec35b0654ac19 = $('<div id="html_bd3c89f7db19413ebf6ec35b0654ac19" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_49e7adc75c0c411496d207385960300d.setContent(html_bd3c89f7db19413ebf6ec35b0654ac19);
+            
+
+            marker_d19b2a86a0524a42a14bcbb8781bbf73.bindPopup(popup_49e7adc75c0c411496d207385960300d)
+            ;
+
+            
+        
+    
+        var marker_364f3210703644728766fbb16195b370 = L.marker(
+            [15.96666667, 76.73333333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_ba72eaeec57449519d5128ed863c37ec = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_364f3210703644728766fbb16195b370.setIcon(icon_ba72eaeec57449519d5128ed863c37ec);
+            
+    
+            var popup_5c0359b8b0f340d2895af7fe36ad12f2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e2ebe4d374c043a5bbf68e45975144a6 = $('<div id="html_e2ebe4d374c043a5bbf68e45975144a6" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_5c0359b8b0f340d2895af7fe36ad12f2.setContent(html_e2ebe4d374c043a5bbf68e45975144a6);
+            
+
+            marker_364f3210703644728766fbb16195b370.bindPopup(popup_5c0359b8b0f340d2895af7fe36ad12f2)
+            ;
+
+            
+        
+    
+        var marker_94ca5c1758c443828f8c0b523d8c4206 = L.marker(
+            [16.06666667, 76.65],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_27dd8f921f0747fba0b97195c76d089d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_94ca5c1758c443828f8c0b523d8c4206.setIcon(icon_27dd8f921f0747fba0b97195c76d089d);
+            
+    
+            var popup_c2358a4033684f7db03d614e9f0bfc90 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_db1cd919c8f84d40abac724af6dfa6e6 = $('<div id="html_db1cd919c8f84d40abac724af6dfa6e6" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_c2358a4033684f7db03d614e9f0bfc90.setContent(html_db1cd919c8f84d40abac724af6dfa6e6);
+            
+
+            marker_94ca5c1758c443828f8c0b523d8c4206.bindPopup(popup_c2358a4033684f7db03d614e9f0bfc90)
+            ;
+
+            
+        
+    
+        var marker_d37a2129b5f9426aa19f59b8ba126e55 = L.marker(
+            [16.36666667, 76.78333333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_c2902205ab41446e890df8021111ff00 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d37a2129b5f9426aa19f59b8ba126e55.setIcon(icon_c2902205ab41446e890df8021111ff00);
+            
+    
+            var popup_6a82413c25ed4a588f34cc245a460ae1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_810263d0ab1a4dca85707f9bf3c891a3 = $('<div id="html_810263d0ab1a4dca85707f9bf3c891a3" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_6a82413c25ed4a588f34cc245a460ae1.setContent(html_810263d0ab1a4dca85707f9bf3c891a3);
+            
+
+            marker_d37a2129b5f9426aa19f59b8ba126e55.bindPopup(popup_6a82413c25ed4a588f34cc245a460ae1)
+            ;
+
+            
+        
+    
+        var marker_4619394e5947482a864860d9ccfb05d4 = L.marker(
+            [16.36666667, 76.76666667],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_e6519f5ff0304e84aa1446cdc1d02a23 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4619394e5947482a864860d9ccfb05d4.setIcon(icon_e6519f5ff0304e84aa1446cdc1d02a23);
+            
+    
+            var popup_933f7d3c7f5247ac84c61bbb09617291 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4566a5319eb14195a9d058a6d5d1f73a = $('<div id="html_4566a5319eb14195a9d058a6d5d1f73a" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_933f7d3c7f5247ac84c61bbb09617291.setContent(html_4566a5319eb14195a9d058a6d5d1f73a);
+            
+
+            marker_4619394e5947482a864860d9ccfb05d4.bindPopup(popup_933f7d3c7f5247ac84c61bbb09617291)
+            ;
+
+            
+        
+    
+        var marker_ddd48646c4da47549a57252580d6a005 = L.marker(
+            [16.21666667, 76.73333333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_d2b9a3d12c7245e9acb6409de61aa667 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ddd48646c4da47549a57252580d6a005.setIcon(icon_d2b9a3d12c7245e9acb6409de61aa667);
+            
+    
+            var popup_65c7b3fac82f45e3a312052fbc271eac = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_af3599e2fe184c4b8e6739eed26ec3b0 = $('<div id="html_af3599e2fe184c4b8e6739eed26ec3b0" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_65c7b3fac82f45e3a312052fbc271eac.setContent(html_af3599e2fe184c4b8e6739eed26ec3b0);
+            
+
+            marker_ddd48646c4da47549a57252580d6a005.bindPopup(popup_65c7b3fac82f45e3a312052fbc271eac)
+            ;
+
+            
+        
+    
+        var marker_5ffe6d7dc43941679345f58f64bc5754 = L.marker(
+            [23.88333333, 74.35],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_df3ff4c9612b4290b6160b5631303363 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5ffe6d7dc43941679345f58f64bc5754.setIcon(icon_df3ff4c9612b4290b6160b5631303363);
+            
+    
+            var popup_7b1eaffdd4c14843993b46defb4277f3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3af5012289114a30b28dbaef110666bf = $('<div id="html_3af5012289114a30b28dbaef110666bf" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_7b1eaffdd4c14843993b46defb4277f3.setContent(html_3af5012289114a30b28dbaef110666bf);
+            
+
+            marker_5ffe6d7dc43941679345f58f64bc5754.bindPopup(popup_7b1eaffdd4c14843993b46defb4277f3)
+            ;
+
+            
+        
+    
+        var marker_471dcbdf76334c068e99daf7d74a3ad8 = L.marker(
+            [15.25, 77.58333333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_8af1f9ea0b9640c9ae5e56defd1ea3f1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_471dcbdf76334c068e99daf7d74a3ad8.setIcon(icon_8af1f9ea0b9640c9ae5e56defd1ea3f1);
+            
+    
+            var popup_8ca4185e8676454a94528cfa4f68e29b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_649f7700bc054f3984a6e71dde12b1dc = $('<div id="html_649f7700bc054f3984a6e71dde12b1dc" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_8ca4185e8676454a94528cfa4f68e29b.setContent(html_649f7700bc054f3984a6e71dde12b1dc);
+            
+
+            marker_471dcbdf76334c068e99daf7d74a3ad8.bindPopup(popup_8ca4185e8676454a94528cfa4f68e29b)
+            ;
+
+            
+        
+    
+        var marker_c1b2fedd77804e3ba26322610412199a = L.marker(
+            [15.23333333, 77.05],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_13b31e35faeb46dc8657f76d114828db = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c1b2fedd77804e3ba26322610412199a.setIcon(icon_13b31e35faeb46dc8657f76d114828db);
+            
+    
+            var popup_9db6dd6d8f0a497cb757994dffd7fa9f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bd2a9320c9f842ca807925af3baacac6 = $('<div id="html_bd2a9320c9f842ca807925af3baacac6" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_9db6dd6d8f0a497cb757994dffd7fa9f.setContent(html_bd2a9320c9f842ca807925af3baacac6);
+            
+
+            marker_c1b2fedd77804e3ba26322610412199a.bindPopup(popup_9db6dd6d8f0a497cb757994dffd7fa9f)
+            ;
+
+            
+        
+    
+        var marker_6db3240b91f34db8bdf069c1832717c6 = L.marker(
+            [12.88333333, 78.26666667],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_9fdb67e9619a4c3ea8a99c4b999c4ec6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6db3240b91f34db8bdf069c1832717c6.setIcon(icon_9fdb67e9619a4c3ea8a99c4b999c4ec6);
+            
+    
+            var popup_e89be681b4444ef580205faf91d4caaf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_cb037bfa6dd34cd2ae1bc195cabdd1b1 = $('<div id="html_cb037bfa6dd34cd2ae1bc195cabdd1b1" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_e89be681b4444ef580205faf91d4caaf.setContent(html_cb037bfa6dd34cd2ae1bc195cabdd1b1);
+            
+
+            marker_6db3240b91f34db8bdf069c1832717c6.bindPopup(popup_e89be681b4444ef580205faf91d4caaf)
+            ;
+
+            
+        
+    
+        var marker_38a20e86b9f2406b862abfdbc9c7dc46 = L.marker(
+            [12.71666667, 78.23333333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_21bf9e101d874d91b5ddd2cea52c06ee = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_38a20e86b9f2406b862abfdbc9c7dc46.setIcon(icon_21bf9e101d874d91b5ddd2cea52c06ee);
+            
+    
+            var popup_4a694623b7ee4f16885f2ea2a4eff14a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_352541cfc9b545deb2d989c7f795077e = $('<div id="html_352541cfc9b545deb2d989c7f795077e" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_4a694623b7ee4f16885f2ea2a4eff14a.setContent(html_352541cfc9b545deb2d989c7f795077e);
+            
+
+            marker_38a20e86b9f2406b862abfdbc9c7dc46.bindPopup(popup_4a694623b7ee4f16885f2ea2a4eff14a)
+            ;
+
+            
+        
+    
+        var marker_523c98b1926b40d9aa3528fb6b2d8147 = L.marker(
+            [12.9, 78.25],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_0cdc96f0213249988b8f08a6a7a703f1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_523c98b1926b40d9aa3528fb6b2d8147.setIcon(icon_0cdc96f0213249988b8f08a6a7a703f1);
+            
+    
+            var popup_5bba89d1a16d4c4a9e252393e7ba514d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ed6a10779a4c47d2bf33fdad09457296 = $('<div id="html_ed6a10779a4c47d2bf33fdad09457296" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_5bba89d1a16d4c4a9e252393e7ba514d.setContent(html_ed6a10779a4c47d2bf33fdad09457296);
+            
+
+            marker_523c98b1926b40d9aa3528fb6b2d8147.bindPopup(popup_5bba89d1a16d4c4a9e252393e7ba514d)
+            ;
+
+            
+        
+    
+        var marker_c84f8f23539b40cc829a83c2c19fed84 = L.marker(
+            [12.81666667, 78.25],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_99b28472132445f5a3b8d8dd4a3f984a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c84f8f23539b40cc829a83c2c19fed84.setIcon(icon_99b28472132445f5a3b8d8dd4a3f984a);
+            
+    
+            var popup_08f776536fcf4d1dab84cc3e5264ff08 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8e03a3393e25414cb295953d291983be = $('<div id="html_8e03a3393e25414cb295953d291983be" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_08f776536fcf4d1dab84cc3e5264ff08.setContent(html_8e03a3393e25414cb295953d291983be);
+            
+
+            marker_c84f8f23539b40cc829a83c2c19fed84.bindPopup(popup_08f776536fcf4d1dab84cc3e5264ff08)
+            ;
+
+            
+        
+    
+        var marker_3318e60d5aa54ce697c32b0e7f67f3ac = L.marker(
+            [12.63333333, 78.26666667],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_c9fb43ce71f5418fb89e7b92437cd8ea = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3318e60d5aa54ce697c32b0e7f67f3ac.setIcon(icon_c9fb43ce71f5418fb89e7b92437cd8ea);
+            
+    
+            var popup_5c8ee57553c24171be9bf58166d8f9d3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_102b2e560eea43f0bba580989b9e5064 = $('<div id="html_102b2e560eea43f0bba580989b9e5064" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_5c8ee57553c24171be9bf58166d8f9d3.setContent(html_102b2e560eea43f0bba580989b9e5064);
+            
+
+            marker_3318e60d5aa54ce697c32b0e7f67f3ac.bindPopup(popup_5c8ee57553c24171be9bf58166d8f9d3)
+            ;
+
+            
+        
+    
+        var marker_ef6baf12bffe472cb29c41a281a0bac2 = L.marker(
+            [12.73333333, 78.21666667],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_01643f42c58e48f081f7337478c933a9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ef6baf12bffe472cb29c41a281a0bac2.setIcon(icon_01643f42c58e48f081f7337478c933a9);
+            
+    
+            var popup_aee9fdda2afa4b7a80755fde81b520f3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_68256d9a6665417ea2fd009816ad2101 = $('<div id="html_68256d9a6665417ea2fd009816ad2101" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_aee9fdda2afa4b7a80755fde81b520f3.setContent(html_68256d9a6665417ea2fd009816ad2101);
+            
+
+            marker_ef6baf12bffe472cb29c41a281a0bac2.bindPopup(popup_aee9fdda2afa4b7a80755fde81b520f3)
+            ;
+
+            
+        
+    
+        var marker_7df8ff85a1ac44a4bfcbf857fc6d0e47 = L.marker(
+            [12.91666667, 78.28333333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_1c515e1aa78d4eafa0e3847549e87999 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7df8ff85a1ac44a4bfcbf857fc6d0e47.setIcon(icon_1c515e1aa78d4eafa0e3847549e87999);
+            
+    
+            var popup_c6f92d1527d9405b86f15f7b70ce2b71 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_551eb01350d1401fbe39ec0b448e37ce = $('<div id="html_551eb01350d1401fbe39ec0b448e37ce" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_c6f92d1527d9405b86f15f7b70ce2b71.setContent(html_551eb01350d1401fbe39ec0b448e37ce);
+            
+
+            marker_7df8ff85a1ac44a4bfcbf857fc6d0e47.bindPopup(popup_c6f92d1527d9405b86f15f7b70ce2b71)
+            ;
+
+            
+        
+    
+        var marker_584de4fefb074fd8b7c90bf6f15ac258 = L.marker(
+            [24.26666667, 82.78333333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_b27bccfeabd14260961f63ca1cd5ad7b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_584de4fefb074fd8b7c90bf6f15ac258.setIcon(icon_b27bccfeabd14260961f63ca1cd5ad7b);
+            
+    
+            var popup_02f986ad8132491c87962c0965436b8f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_26c03b574b5642a4943c5f0b725da8d6 = $('<div id="html_26c03b574b5642a4943c5f0b725da8d6" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_02f986ad8132491c87962c0965436b8f.setContent(html_26c03b574b5642a4943c5f0b725da8d6);
+            
+
+            marker_584de4fefb074fd8b7c90bf6f15ac258.bindPopup(popup_02f986ad8132491c87962c0965436b8f)
+            ;
+
+            
+        
+    
+        var marker_ecf8dda89a994842aa194b1e0dffccc5 = L.marker(
+            [24.35, 82.75],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_6ad4373c2cb14730a6f4535c721815dc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ecf8dda89a994842aa194b1e0dffccc5.setIcon(icon_6ad4373c2cb14730a6f4535c721815dc);
+            
+    
+            var popup_734046abe5594cf9bdc8877f15cc0066 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_462dcda9bd1b47f281739f83f4d22549 = $('<div id="html_462dcda9bd1b47f281739f83f4d22549" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_734046abe5594cf9bdc8877f15cc0066.setContent(html_462dcda9bd1b47f281739f83f4d22549);
+            
+
+            marker_ecf8dda89a994842aa194b1e0dffccc5.bindPopup(popup_734046abe5594cf9bdc8877f15cc0066)
+            ;
+
+            
+        
+    
+        var marker_07c475ceb8cd4e4495274de821c8d1e7 = L.marker(
+            [23.61666667, 80.25],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_0a96e6b1e1304cbe8d1e618646ae3267 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_07c475ceb8cd4e4495274de821c8d1e7.setIcon(icon_0a96e6b1e1304cbe8d1e618646ae3267);
+            
+    
+            var popup_a5f98ad35c5e423bb105b5951baf1a61 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_842ce1da9f134bfca8f5441c8bde2f4d = $('<div id="html_842ce1da9f134bfca8f5441c8bde2f4d" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_a5f98ad35c5e423bb105b5951baf1a61.setContent(html_842ce1da9f134bfca8f5441c8bde2f4d);
+            
+
+            marker_07c475ceb8cd4e4495274de821c8d1e7.bindPopup(popup_a5f98ad35c5e423bb105b5951baf1a61)
+            ;
+
+            
+        
+    
+        var marker_2983a5daad464e42b38b2aca3a8e0d2c = L.marker(
+            [12.9, 76.51666667],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_cea3d5d6795b4f209416bb65e34bd679 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2983a5daad464e42b38b2aca3a8e0d2c.setIcon(icon_cea3d5d6795b4f209416bb65e34bd679);
+            
+    
+            var popup_ec77568ce93648969ee469dca5bd6ab0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_547ca31658e547249030e6ff24d48288 = $('<div id="html_547ca31658e547249030e6ff24d48288" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_ec77568ce93648969ee469dca5bd6ab0.setContent(html_547ca31658e547249030e6ff24d48288);
+            
+
+            marker_2983a5daad464e42b38b2aca3a8e0d2c.bindPopup(popup_ec77568ce93648969ee469dca5bd6ab0)
+            ;
+
+            
+        
+    
+        var marker_1c5ca1bc0cc34303a41ad0f81dd268f7 = L.marker(
+            [14.31666667, 77.5],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_e994f52267a1475f8f75d0d93bd823bd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1c5ca1bc0cc34303a41ad0f81dd268f7.setIcon(icon_e994f52267a1475f8f75d0d93bd823bd);
+            
+    
+            var popup_b72cdc714ac8427ea569337715da4f81 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f62e4b9d3c454968b7a51f22b12a42cb = $('<div id="html_f62e4b9d3c454968b7a51f22b12a42cb" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_b72cdc714ac8427ea569337715da4f81.setContent(html_f62e4b9d3c454968b7a51f22b12a42cb);
+            
+
+            marker_1c5ca1bc0cc34303a41ad0f81dd268f7.bindPopup(popup_b72cdc714ac8427ea569337715da4f81)
+            ;
+
+            
+        
+    
+        var marker_9923a5e94e464c98ba4996cc2b4f72e7 = L.marker(
+            [14.3, 77.5],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_1e36e8627c3e49eeaa9670d09d7ebb15 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9923a5e94e464c98ba4996cc2b4f72e7.setIcon(icon_1e36e8627c3e49eeaa9670d09d7ebb15);
+            
+    
+            var popup_129c543f17c643ffbc3196e49d44858b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9e11421f784646e291340b6588d08eeb = $('<div id="html_9e11421f784646e291340b6588d08eeb" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_129c543f17c643ffbc3196e49d44858b.setContent(html_9e11421f784646e291340b6588d08eeb);
+            
+
+            marker_9923a5e94e464c98ba4996cc2b4f72e7.bindPopup(popup_129c543f17c643ffbc3196e49d44858b)
+            ;
+
+            
+        
+    
+        var marker_ec6f0cf28ca34f26a7cc6babeb1c79ec = L.marker(
+            [14.3, 77.5],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_abf5861730f04782b2676b427d32561b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ec6f0cf28ca34f26a7cc6babeb1c79ec.setIcon(icon_abf5861730f04782b2676b427d32561b);
+            
+    
+            var popup_610bb5d080ca4833a5fccf9d4485fd8b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_444ca8b173dc4a76a361794bbe1a226a = $('<div id="html_444ca8b173dc4a76a361794bbe1a226a" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_610bb5d080ca4833a5fccf9d4485fd8b.setContent(html_444ca8b173dc4a76a361794bbe1a226a);
+            
+
+            marker_ec6f0cf28ca34f26a7cc6babeb1c79ec.bindPopup(popup_610bb5d080ca4833a5fccf9d4485fd8b)
+            ;
+
+            
+        
+    
+        var marker_50651109792a4cbc92706dd609646c16 = L.marker(
+            [14.73333333, 77.41666667],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_2222896130f941aea61d10c0d5722f6f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_50651109792a4cbc92706dd609646c16.setIcon(icon_2222896130f941aea61d10c0d5722f6f);
+            
+    
+            var popup_79c39a10949b482783f536e15a76e40e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0b2928ef01eb41d0bd7cc54a9af6e237 = $('<div id="html_0b2928ef01eb41d0bd7cc54a9af6e237" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_79c39a10949b482783f536e15a76e40e.setContent(html_0b2928ef01eb41d0bd7cc54a9af6e237);
+            
+
+            marker_50651109792a4cbc92706dd609646c16.bindPopup(popup_79c39a10949b482783f536e15a76e40e)
+            ;
+
+            
+        
+    
+        var marker_59cd2b6abe9744df98df1d1ee047ea34 = L.marker(
+            [14.1, 77.53333333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_288e804f3a16460c9671f491e6256fae = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_59cd2b6abe9744df98df1d1ee047ea34.setIcon(icon_288e804f3a16460c9671f491e6256fae);
+            
+    
+            var popup_eae808c659c447edac2eddcf1b2683f3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a1c40945f8ac4a3e8a9f6677ce01b2aa = $('<div id="html_a1c40945f8ac4a3e8a9f6677ce01b2aa" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_eae808c659c447edac2eddcf1b2683f3.setContent(html_a1c40945f8ac4a3e8a9f6677ce01b2aa);
+            
+
+            marker_59cd2b6abe9744df98df1d1ee047ea34.bindPopup(popup_eae808c659c447edac2eddcf1b2683f3)
+            ;
+
+            
+        
+    
+        var marker_93bdff2e0ce1477c8b0bc08542ae2513 = L.marker(
+            [14.31666667, 77.5],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_333d33d2d7574791a2e7424067302eb3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_93bdff2e0ce1477c8b0bc08542ae2513.setIcon(icon_333d33d2d7574791a2e7424067302eb3);
+            
+    
+            var popup_9433d4fde03943e5aece0acd740aa0a5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_667b94539d5e42a1a4014090a5a2d9ae = $('<div id="html_667b94539d5e42a1a4014090a5a2d9ae" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_9433d4fde03943e5aece0acd740aa0a5.setContent(html_667b94539d5e42a1a4014090a5a2d9ae);
+            
+
+            marker_93bdff2e0ce1477c8b0bc08542ae2513.bindPopup(popup_9433d4fde03943e5aece0acd740aa0a5)
+            ;
+
+            
+        
+    
+        var marker_2229d704cc8d4e60b7b61b87522b51fa = L.marker(
+            [14.33333333, 77.48333333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_30dcaf9b5bb84d419e0263328e29d2e0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2229d704cc8d4e60b7b61b87522b51fa.setIcon(icon_30dcaf9b5bb84d419e0263328e29d2e0);
+            
+    
+            var popup_d92f76bce1d24670b8b720d7f978f342 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ec3f47688edc4d488177f870acb6dad0 = $('<div id="html_ec3f47688edc4d488177f870acb6dad0" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_d92f76bce1d24670b8b720d7f978f342.setContent(html_ec3f47688edc4d488177f870acb6dad0);
+            
+
+            marker_2229d704cc8d4e60b7b61b87522b51fa.bindPopup(popup_d92f76bce1d24670b8b720d7f978f342)
+            ;
+
+            
+        
+    
+        var marker_86881f8cb75b4e62ad47bd27cda3224a = L.marker(
+            [14.88333333, 77.4],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_6cc8ccd5000544afaef88643d23ecf4d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_86881f8cb75b4e62ad47bd27cda3224a.setIcon(icon_6cc8ccd5000544afaef88643d23ecf4d);
+            
+    
+            var popup_95d21ef150ef492694e8e48108084f12 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a48d16ba748a48c0a79f5dd18160a92a = $('<div id="html_a48d16ba748a48c0a79f5dd18160a92a" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_95d21ef150ef492694e8e48108084f12.setContent(html_a48d16ba748a48c0a79f5dd18160a92a);
+            
+
+            marker_86881f8cb75b4e62ad47bd27cda3224a.bindPopup(popup_95d21ef150ef492694e8e48108084f12)
+            ;
+
+            
+        
+    
+        var marker_216c5929cbbe4d2b9bb5cd19eb8c090e = L.marker(
+            [14.88333333, 77.36666667],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_19435e23c1e946c5897d317627f90575 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_216c5929cbbe4d2b9bb5cd19eb8c090e.setIcon(icon_19435e23c1e946c5897d317627f90575);
+            
+    
+            var popup_6f70f79bc8174a8f83260bec47ce61ca = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e5453fc75f0540a0aa0e862a11c69977 = $('<div id="html_e5453fc75f0540a0aa0e862a11c69977" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_6f70f79bc8174a8f83260bec47ce61ca.setContent(html_e5453fc75f0540a0aa0e862a11c69977);
+            
+
+            marker_216c5929cbbe4d2b9bb5cd19eb8c090e.bindPopup(popup_6f70f79bc8174a8f83260bec47ce61ca)
+            ;
+
+            
+        
+    
+        var marker_7a86f62a88114e4dbd807f16eae8212e = L.marker(
+            [14.58333333, 75.4],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_acf0b2f0ec5044f6ba8cf61a38f89fe3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7a86f62a88114e4dbd807f16eae8212e.setIcon(icon_acf0b2f0ec5044f6ba8cf61a38f89fe3);
+            
+    
+            var popup_39965d5af5cc41e799e08836d34dbc60 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e75f40727c1f4c9591c47299f2f3323f = $('<div id="html_e75f40727c1f4c9591c47299f2f3323f" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_39965d5af5cc41e799e08836d34dbc60.setContent(html_e75f40727c1f4c9591c47299f2f3323f);
+            
+
+            marker_7a86f62a88114e4dbd807f16eae8212e.bindPopup(popup_39965d5af5cc41e799e08836d34dbc60)
+            ;
+
+            
+        
+    
+        var marker_6e4a42f0e2194ac98a344ba03bd59297 = L.marker(
+            [14.23333333, 75.65],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_14ea0d2801574423afc9ee626b27fdee = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6e4a42f0e2194ac98a344ba03bd59297.setIcon(icon_14ea0d2801574423afc9ee626b27fdee);
+            
+    
+            var popup_74137280e0b54f41864f7bf0e00a95a4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_11d7bfd58f794125b936ff6f91b5a178 = $('<div id="html_11d7bfd58f794125b936ff6f91b5a178" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_74137280e0b54f41864f7bf0e00a95a4.setContent(html_11d7bfd58f794125b936ff6f91b5a178);
+            
+
+            marker_6e4a42f0e2194ac98a344ba03bd59297.bindPopup(popup_74137280e0b54f41864f7bf0e00a95a4)
+            ;
+
+            
+        
+    
+        var marker_722a629e182e49b483ea3bc8bb2fa8af = L.marker(
+            [23.01666667, 86.08333333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_5619c60959af40afb286428226dc284d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_722a629e182e49b483ea3bc8bb2fa8af.setIcon(icon_5619c60959af40afb286428226dc284d);
+            
+    
+            var popup_0ac0cb81a46745ebb395cf21c9eabcfb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a35c46a2d6d447ac9f029e9de66d4756 = $('<div id="html_a35c46a2d6d447ac9f029e9de66d4756" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_0ac0cb81a46745ebb395cf21c9eabcfb.setContent(html_a35c46a2d6d447ac9f029e9de66d4756);
+            
+
+            marker_722a629e182e49b483ea3bc8bb2fa8af.bindPopup(popup_0ac0cb81a46745ebb395cf21c9eabcfb)
+            ;
+
+            
+        
+    
+        var marker_38367db1857946eeb6add6c7759b2a67 = L.marker(
+            [23.05, 86.01666667],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_78dcb6b1b7474741a67f2207f68a73ca = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_38367db1857946eeb6add6c7759b2a67.setIcon(icon_78dcb6b1b7474741a67f2207f68a73ca);
+            
+    
+            var popup_23b7b233102c4612a8c90e284ce45453 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6ab36f88e5ea4ef3abe107e346dfff4f = $('<div id="html_6ab36f88e5ea4ef3abe107e346dfff4f" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_23b7b233102c4612a8c90e284ce45453.setContent(html_6ab36f88e5ea4ef3abe107e346dfff4f);
+            
+
+            marker_38367db1857946eeb6add6c7759b2a67.bindPopup(popup_23b7b233102c4612a8c90e284ce45453)
+            ;
+
+            
+        
+    
+        var marker_ede8264c4d9345e39d7bbb5cc8d780e0 = L.marker(
+            [22.5, 85.26666667],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_37a027c8e59040e88205c02da9533aea = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ede8264c4d9345e39d7bbb5cc8d780e0.setIcon(icon_37a027c8e59040e88205c02da9533aea);
+            
+    
+            var popup_54a7bd2fe1284975b7b1707640f2a8a8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6b0e7be170784748acb7b67fe757747c = $('<div id="html_6b0e7be170784748acb7b67fe757747c" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_54a7bd2fe1284975b7b1707640f2a8a8.setContent(html_6b0e7be170784748acb7b67fe757747c);
+            
+
+            marker_ede8264c4d9345e39d7bbb5cc8d780e0.bindPopup(popup_54a7bd2fe1284975b7b1707640f2a8a8)
+            ;
+
+            
+        
+    
+        var marker_960346b1bbbc40b5be867155c735f0c6 = L.marker(
+            [21.4, 82.63333333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_e3ac4440af034fdcabc9862d673223e9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_960346b1bbbc40b5be867155c735f0c6.setIcon(icon_e3ac4440af034fdcabc9862d673223e9);
+            
+    
+            var popup_6bcc49b275064824a14c6338bcd2d49e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8853098853984bdc848a78d978565083 = $('<div id="html_8853098853984bdc848a78d978565083" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_6bcc49b275064824a14c6338bcd2d49e.setContent(html_8853098853984bdc848a78d978565083);
+            
+
+            marker_960346b1bbbc40b5be867155c735f0c6.bindPopup(popup_6bcc49b275064824a14c6338bcd2d49e)
+            ;
+
+            
+        
+    
+        var marker_e226b46898f043adb0c06c9e487be221 = L.marker(
+            [11.46666667, 76.4],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_d9b8a3f74c7d40f6a60e68494fb84542 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e226b46898f043adb0c06c9e487be221.setIcon(icon_d9b8a3f74c7d40f6a60e68494fb84542);
+            
+    
+            var popup_9b8181b59f63424ba1eb779fe541ede7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_31dfc6ad733e4611952aab928ae71012 = $('<div id="html_31dfc6ad733e4611952aab928ae71012" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_9b8181b59f63424ba1eb779fe541ede7.setContent(html_31dfc6ad733e4611952aab928ae71012);
+            
+
+            marker_e226b46898f043adb0c06c9e487be221.bindPopup(popup_9b8181b59f63424ba1eb779fe541ede7)
+            ;
+
+            
+        
+    
+        var marker_513e970cb2ce4938b793022fca94e443 = L.marker(
+            [11.48333333, 76.31666667],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_8e44e7332ff64f3c8100c8917b527fa9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_513e970cb2ce4938b793022fca94e443.setIcon(icon_8e44e7332ff64f3c8100c8917b527fa9);
+            
+    
+            var popup_4bd7f2c17df1415c8d22c2be41c4e4cb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_264468a2ed85413aa5a3a22df54bce0c = $('<div id="html_264468a2ed85413aa5a3a22df54bce0c" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_4bd7f2c17df1415c8d22c2be41c4e4cb.setContent(html_264468a2ed85413aa5a3a22df54bce0c);
+            
+
+            marker_513e970cb2ce4938b793022fca94e443.bindPopup(popup_4bd7f2c17df1415c8d22c2be41c4e4cb)
+            ;
+
+            
+        
+    
+        var marker_b766b0d8565a42a9b2469ffaffbdf3c2 = L.marker(
+            [11.46666667, 76.33333333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_ae4aac30efd8432a8584b3125e24459b);
+        
+    
+
+                var icon_0ab8664235b343cbaeb3ac3739711d60 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b766b0d8565a42a9b2469ffaffbdf3c2.setIcon(icon_0ab8664235b343cbaeb3ac3739711d60);
+            
+    
+            var popup_b02cbc26006c461893975cfb8b519f7b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9fba36e217014301b4e8a0cdf5d3723d = $('<div id="html_9fba36e217014301b4e8a0cdf5d3723d" style="width: 100.0%; height: 100.0%;">Hi, theres Gold Here!</div>')[0];
+                popup_b02cbc26006c461893975cfb8b519f7b.setContent(html_9fba36e217014301b4e8a0cdf5d3723d);
+            
+
+            marker_b766b0d8565a42a9b2469ffaffbdf3c2.bindPopup(popup_b02cbc26006c461893975cfb8b519f7b)
+            ;
+
+            
+        
+</script>
