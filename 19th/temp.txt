@@ -1,0 +1,28 @@
+import folium
+import pandas as pd
+
+data = pd.read_csv("datafile.csv")
+lat = list(data["LATITUDE"])
+lon = list(data["LONGITUDE"])
+
+html = """<h4>Volcano information:</h4> Height: %s m """
+
+map = folium.Map(location=[20.5937, 78.9629], zoom_start=6, tiles="Mapbox Bright")
+fg = folium.FeatureGroup(name="India Gold Map")
+
+def state_names():
+    state_list = ["Andaman and Nicobar", "Telangana", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chandigarh", "Chhattisgarh", "Dadra and Nagar Haveli", "Daman and Diu", "Delhi", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu and Kashmir", "Jharkhand", "Karnataka", "Kerala", "Lakshadweep", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Orissa", "Puducherry", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Tripura", "Uttar Pradesh", "Uttaranchal", "West Bengal"]
+    for i in state_list:
+        return i
+
+def state_colors():
+    color_list = ['blue', 'green', 'red', 'orange', 'yellow']
+    for i in color_list:
+        return i
+for lt, ln in zip(lat, lon):
+    fg.add_child(folium.Marker(location=[lt, ln], popup = "Hi, theres Gold Here!", icon = folium.Icon(color="green")))
+
+fg.add_child(folium.GeoJson(data=open('india_telengana.json', 'r', encoding='utf-8-sig').read(), style_function=lambda x: {'fillColor':state_colors() if x['properties']["NAME_1"] == state_names() else 'orange' }))
+
+map.add_child(fg)
+map.save("India-Gold.html")
