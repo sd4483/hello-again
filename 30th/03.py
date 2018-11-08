@@ -1,23 +1,21 @@
-import pyscopg2
+import psycopg2
 
 def create_table():
-    conn = sqlite3.connect("lite.db")
+    conn = psycopg2.connect("dbname='dab1' user='postgres' password='amber' host='localhost' port='5433'")
     cur = conn.cursor()
     cur.execute("CREATE TABLE IF NOT EXISTS store (item TEXT, quantity INTEGER, price REAL)")
     conn.commit()
     conn.close()
 
 def insert(item, quantity, price):
-    conn = sqlite3.connect("lite.db")
+    conn = psycopg2.connect("dbname='dab1' user='postgres' password='amber' host='localhost' port='5433'")
     cur = conn.cursor()
-    cur.execute("INSERT INTO store VALUES (?,?,?)", (item, quantity, price))
+    cur.execute("INSERT INTO store VALUES (%s, %s, %s)" ,(item, quantity, price))
     conn.commit()
     conn.close()
 
-#insert('Beer', 12, 2.4)
-
 def view_db():
-    conn = sqlite3.connect("lite.db")
+    conn = psycopg2.connect("dbname='dab1' user='postgres' password='amber' host='localhost' port='5433'")
     cur = conn.cursor()
     cur.execute("SELECT * FROM store")
     rows = cur.fetchall()
@@ -25,19 +23,23 @@ def view_db():
     return rows
 
 def delete_db(item):
-    conn = sqlite3.connect("lite.db")
+    conn = psycopg2.connect("dbname='dab1' user='postgres' password='amber' host='localhost' port='5433'")
     cur = conn.cursor()
-    cur.execute("DELETE FROM store WHERE item=?", (item,))
+    cur.execute("DELETE FROM store WHERE item=%s", (item,))
     conn.commit()
     conn.close()
 
 def update_db(quantity, price, item):
-    conn = sqlite3.connect("lite.db")
+    conn = psycopg2.connect("dbname='dab1' user='postgres' password='amber' host='localhost' port='5433'")
     cur = conn.cursor()
-    cur.execute("UPDATE store SET quantity=?, price=? WHERE item=?", (quantity,price,item))
+    cur.execute("UPDATE store SET quantity=%s, price=%s WHERE item=%s", (quantity,price,item))
     conn.commit()
     conn.close()
 
-update_db(11,1.0, 'Water Bottle')
-#delete_db('Beer')
+create_table()
+#insert("Apple", 10, 15)
+#insert("Grape", 20, 7.0)
+#update_db(20,7.0, 'Grapes')
+#delete_db('Apple')
+#update_db(20, 15.0, 'Orange')
 print(view_db())
